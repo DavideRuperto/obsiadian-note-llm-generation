@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Local config and runtime state
+config.toml
+.ticket-hashes.json
+*.tmp
+*.log

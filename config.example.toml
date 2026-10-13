@@ -1,0 +1,26 @@
+# Copy this file to config.toml and adjust it.
+
+# Path to your Obsidian vault (on Windows, use single quotes or forward slashes)
+vault_path = 'C:\Users\you\Documents\Obsidian\MyVault'
+
+# Where answers are written. Relative paths are resolved against the vault.
+answers_dir = "ticket-answers"
+
+# JSON file holding block hashes. Relative paths are resolved against this config file.
+state_file = ".ticket-hashes.json"
+
+# "mock" (no API calls, placeholder answers), "anthropic" or "ollama"
+provider = "mock"
+
+# e.g. "claude-sonnet-5" for anthropic, "llama3.1" for ollama
+model = "claude-sonnet-5"
+
+max_tokens = 4096
+
+# ollama only
+ollama_host = "http://localhost:11434"
+
+system_prompt = """
+You are a technical assistant. You receive a ticket description and reply
+in Markdown with a clear analysis and concrete steps to resolve it.
+"""
